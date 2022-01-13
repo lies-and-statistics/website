@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The website of Lies and Statistics that looks at uses of statistics</title>
+    <link>https://lies-and-statistics.github.io/website/post/</link>
+    <description>Recent content in Posts on The website of Lies and Statistics that looks at uses of statistics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lies-and-statistics.github.io/website/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deficit In Public Investment</title>
+      <link>https://lies-and-statistics.github.io/website/2022/02/13/deficit-in-public-investment/</link>
+      <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lies-and-statistics.github.io/website/2022/02/13/deficit-in-public-investment/</guid>
+      <description>Background  Robert Reich said the US should be spending far more on infrastructure, education and basic research than it currently is, and that US public investment has been steadily declining since the 1960’s.
+Reich says “that decline has largely been driven by so called deficit hawks” and shows a clip of Rand Paul. Reich does a masterful job creating a story of who, what, when, and where.</description>
+    </item>
+    
+    <item>
+      <title>Joe Rogan and COVID-19 Deaths in Young, Healthy Individuals</title>
+      <link>https://lies-and-statistics.github.io/website/2022/01/17/joe-rogan-covid-19-deaths-young-healthy-individuals/</link>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lies-and-statistics.github.io/website/2022/01/17/joe-rogan-covid-19-deaths-young-healthy-individuals/</guid>
+      <description>Intro With doctors calling on Spotify to stop Joe Rogan Experience misinformation, I wanted to see what his remarks were and what the risk really was.
+ Summary Rogan said he did not think young and healthy individuals (specifically a 21 year old) needed to get vaccinated. A rough point estimate of total deaths for individuals aged 0-24, without pre-existing conditions, in England and Wales during March to June 2020 is 15.</description>
+    </item>
+    
+    <item>
+      <title>HHS Hospital Bed Occupancy Map</title>
+      <link>https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/</guid>
+      <description>Intro Curious to see hospital bed utilization, a search brought me to the HHS Inpatient Dashboard.
+The amount of dark brown (70%+) is shocking.
+This brought up two questions:
+What is the historical rate of usage / occupancy? How did they choose the scale used to color the graph?   Historical Usage Occupancy rate data from the CDC shows that the long-term average occupancy rate, ignoring the oldest years of 1975 and 1980, is in the mid to high sixties.</description>
+    </item>
+    
+  </channel>
+</rss>

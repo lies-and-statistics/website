@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>visualization on The website of Lies and Statistics that looks at uses of statistics</title>
+    <link>https://lies-and-statistics.github.io/website/categories/visualization/</link>
+    <description>Recent content in visualization on The website of Lies and Statistics that looks at uses of statistics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lies-and-statistics.github.io/website/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HHS Hospital Bed Occupancy Map</title>
+      <link>https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/</guid>
+      <description>Intro Curious to see hospital bed utilization, a search brought me to the HHS Inpatient Dashboard.
+The amount of dark brown (70%+) is shocking.
+This brought up two questions:
+What is the historical rate of usage / occupancy? How did they choose the scale used to color the graph?   Historical Usage Occupancy rate data from the CDC shows that the long-term average occupancy rate, ignoring the oldest years of 1975 and 1980, is in the mid to high sixties.</description>
+    </item>
+    
+  </channel>
+</rss>

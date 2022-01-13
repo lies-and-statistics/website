@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.91.0" />
+
+
+<title>HHS Hospital Bed Occupancy Map - The website of Lies and Statistics that looks at uses of statistics</title>
+<meta property="og:title" content="HHS Hospital Bed Occupancy Map - The website of Lies and Statistics that looks at uses of statistics">
+
+
+  <link href='https://lies-and-statistics.github.io/website/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/website/css/fonts.css" media="all">
+<link rel="stylesheet" href="/website/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/website/" class="nav-logo">
+    <img src="/website/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/website/about/">About</a></li>
+    
+    <li><a href="https://github.com/lies-and-statistics">GitHub</a></li>
+    
+    <li><a href="https://www.youtube.com/channel/UCUi6Zseov9HF8-qsPKKbN_A">Youtube</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">HHS Hospital Bed Occupancy Map</h1>
+
+    
+    <span class="article-date">2022-01-12</span>
+    
+
+    <div class="article-content">
+      
+<script src="https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="intro" class="section level2">
+<h2>Intro</h2>
+<p>Curious to see hospital bed utilization, a search brought
+me to the <a href="https://protect-public.hhs.gov/pages/hospital-utilization">HHS Inpatient Dashboard</a>.</p>
+<p><img src="dashboard.png" /></p>
+<p>The amount of dark brown (70%+) is shocking.</p>
+<p>This brought up two questions:</p>
+<ol style="list-style-type: decimal">
+<li>What is the historical rate of usage / occupancy?</li>
+<li>How did they choose the scale used to color the graph?</li>
+</ol>
+</div>
+<div id="historical-usage" class="section level2">
+<h2>Historical Usage</h2>
+<p><a href="https://www.cdc.gov/nchs/data/hus/2017/089.pdf">Occupancy rate data from the CDC</a>
+shows that the long-term average occupancy rate,
+ignoring the oldest years of 1975 and 1980,
+is in the <strong>mid to high sixties.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Occupancy Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1975</td>
+<td>76.7%</td>
+</tr>
+<tr class="even">
+<td>1980</td>
+<td>77.7%</td>
+</tr>
+<tr class="odd">
+<td>1990</td>
+<td>69.5%</td>
+</tr>
+<tr class="even">
+<td>2000</td>
+<td>66.1%</td>
+</tr>
+<tr class="odd">
+<td>2005</td>
+<td>69.3%</td>
+</tr>
+<tr class="even">
+<td>2010</td>
+<td>66.6%</td>
+</tr>
+<tr class="odd">
+<td>2013</td>
+<td>64.7%</td>
+</tr>
+<tr class="even">
+<td>2014</td>
+<td>64.8%</td>
+</tr>
+<tr class="odd">
+<td>2015</td>
+<td>65.5%</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.statista.com/statistics/185904/hospital-occupancy-rate-in-the-us-since-2001/">Statistica data</a>
+shows a few more years, with a similar range on the occupancy rate.</p>
+<p><strong>The mean from 2008-2017 was 66.1%.</strong></p>
+<p>This gives a good idea of an average (annual) occupancy rate in non-pandemic years.</p>
+</div>
+<div id="scale-and-colour-choice" class="section level2">
+<h2>Scale and Colour Choice</h2>
+<div id="bin-methods" class="section level3">
+<h3>Bin Methods</h3>
+<p><a href="https://policyviz.com/2017/11/02/choosing-map-bins/">This policyviz article by Jonathan Schwabish</a>
+presents 4 primary binning models for maps:</p>
+<ol style="list-style-type: decimal">
+<li>No bins: continuous color map</li>
+<li>Equal interval bins: If we use 5 bins like the HHS did 0-100% would be
+divided as (0-20, 20-40, 40-60, 60-80, 80+)</li>
+<li>Data distribution bins: have the same number of observations per bin</li>
+<li>Arbitrary: map producer’s choice</li>
+</ol>
+</div>
+<div id="number-of-bins" class="section level3">
+<h3>Number of Bins</h3>
+<p><img src="https://answerminer.com/static/e9ebb1ee2256c796bb1f9ea05af152d1/9e74b/histogram.png" width="250" /></p>
+<p>These formulas suggest 7 as a good number of bins.</p>
+</div>
+<div id="colour-choice" class="section level3">
+<h3>Colour Choice</h3>
+<p><a href="https://chartio.com/learn/charts/how-to-choose-colors-data-visualization/">This article by Mike Yi on Chartio</a>
+discusses color choice. The graphics and quotes below are from that article.</p>
+<p>“When the variable assigned to be colored is numeric or has inherently ordered values, then it can be depicted with a sequential palette. Colors are assigned to data values in a continuum, usually based on lightness, hue, or both.”</p>
+<p><img src="https://chartio.com/images/tutorials/charts/choosing-colors/sequential-palette-example.png" width="250" /></p>
+<p>“If our numeric variable has a meaningful central value, like zero, then we can apply a diverging palette. A diverging palette is essentially a combination of two sequential palettes with a shared endpoint sitting at the central value. Values larger than the center are assigned to colors on one side of the center, while smaller values get assigned to colors on the opposing side.”</p>
+<p><img src="https://chartio.com/images/tutorials/charts/choosing-colors/diverging-palette-example.png" width="250" /></p>
+<p>Mike also says discrete color palettes allow us to better associate colors to
+values, but that we lose the ability to compare values within a bin.</p>
+</div>
+<div id="hhs-scale" class="section level3">
+<h3>HHS Scale</h3>
+<p><img src="scale.png" width="100"></p>
+<p>The HHS used a 5 bin method with arbitrary bins.</p>
+<p>The highest category (70%+, colored dark brown) having an interval as large as 30%
+and starting so close to the long term average of mid to high 60’s seems like
+a poor choice. Even a state with a few percentage
+points above the long term occupancy average would find itself in the highest
+category in year like 2005 or 2010.</p>
+</div>
+</div>
+<div id="fixing-the-map" class="section level2">
+<h2>Fixing the Map</h2>
+<div id="some-failures" class="section level3">
+<h3>Some Failures</h3>
+<p>I tried equal length intervals and continuous coloring, but they both
+produced inadequate charts.</p>
+<p>A diverging color with white as the central value made it easy to see
+which states were above and below the long term average. However this data
+is sequential, so a sequential color choice is easier for viewers to
+comprehend.</p>
+</div>
+<div id="custom-bins" class="section level3">
+<h3>Custom Bins</h3>
+<p>The following criteria were used:</p>
+<ul>
+<li>Show 66% as a historical average</li>
+<li>More concern is placed on over capacity than under capacity</li>
+<li>Roughly 7 bins should be used</li>
+</ul>
+<p>Using these criteria I came up with the following ranges:</p>
+<p>0-40, 40-50, 50-60, 60-70, 70-80, 80-90, 90+</p>
+<p><img src="https://lies-and-statistics.github.io/website/2022/01/12/hhs-hopsital-bed-occupancy-map/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Adding more bin on the top end allows seeing the trends more clearly.
+Including the historical average of inpatient bed utilization gives
+readers context about what a normal figure is.</p>
+<p>I am still not happy with the inability to see how many states fall in each bin.
+For instance it is not easy to see that no states fall in 90%+ territory.
+Adding a bar chart similar to this <a href="https://www.urban.org/urban-wire/how-maps-bins-can-influence-your-perception-important-policy-issue">urban.org</a>
+article would help considerably, and I may do so in the future.</p>
+<p><img src="https://edit.urban.org/sites/default/files/maps6.png" /></p>
+</div>
+</div>
+<div id="preparing-for-change" class="section level2">
+<h2>Preparing for Change</h2>
+<p>It is possible that the HHS made a good choice for bins in another time,
+but that during a pandemic the bin choices are less optimal.
+When making live data dashboards available my recommendation would be to
+consider if changes in the data could negatively impact your data visualization
+and automate warnings to administrators. In the map above, if multiple
+data points started to fall into the 0-40% range, especially below 30%,
+a new bin choice would be necessary. If the inpatient bed utilization average
+changed significantly over a long period, like the decades from the 1970’s and
+1980’s to the 2000’s and 2010’s, the color choices for the mean value
+would likewise have to change.</p>
+<p>Even a reminder to do an annual check may even suffice.</p>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>Data visualization is hard, especially on live data. The HHS could improve <a href="https://protect-public.hhs.gov/pages/hospital-utilization">HHS Inpatient Dashboard</a>
+by simply adding some more data bins.</p>
+<p>I am to see such a great resource for the public from the HHS.
+This visualization and data is publicly available and updated seemingly daily.
+Government agencies everywhere should strive to make such up-to-date information
+freely available to the public.</p>
+</div>
+<div id="more-reading" class="section level2">
+<h2>More Reading</h2>
+<p>I really liked Jonathan Schwabish’s articles, so two more are included below:</p>
+<ul>
+<li><a href="https://www.urban.org/urban-wire/how-define-maps-bins-visualize-your-data">How to define map bins</a></li>
+<li><a href="https://www.urban.org/urban-wire/how-maps-bins-can-influence-your-perception-important-policy-issue">How map bins can influence your perception</a></li>
+</ul>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/website/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
